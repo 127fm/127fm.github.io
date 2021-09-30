@@ -6,3 +6,5 @@ body {
       font-family: 'Open Sans', sans-serif; 
       font-size:14pt;
 }
+
+body, a, a:hover { cursor:url('main/cursor.gif'), auto }
