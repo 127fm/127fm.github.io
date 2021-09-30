@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); 
+
 body {
       color:#212121; 
       background-color:#D0FFD3; 
@@ -7,4 +8,8 @@ body {
       font-size:14pt;
 }
 
-body, a, a:hover { cursor:url('main/cursor.gif'), auto }
+
+body, a, a:hover {  
+      cursor:url(https://raw.githubusercontent.com/milkytoast/zeus/main/cursor.gif), auto; 
+
+}
