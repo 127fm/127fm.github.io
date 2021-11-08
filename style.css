@@ -14,6 +14,12 @@ body {
       font-size:14pt;
 }
 
+@media only screen and (orientation: landscape) {
+  body {
+    background-color: lightblue;
+  }
+}
+
 body, a, a:hover {  
       cursor:url(item/cursor.gif), auto; 
 
