@@ -4,21 +4,23 @@ body {
       color:#212121; 
       
       background-color:#D0FFD3; 
-      background-image:url(https://64.media.tumblr.com/92dcf44440d90dc18b65b6a6d5df71b7/94234c80c1fbbb00-a7/s2048x3072/61b9308a29b80151d4285a7d327b1e8d6d6c0063.jpg);
+      background-image:url('item/backdrop.gif');
       background-attachment:fixed;
+      background-size: cover;
       background-repeat:repeat;
       background-position:center;
       padding:50px; 
-      
       font-family: 'Open Sans', sans-serif; 
       font-size:14pt;
 }
 
+/* 
 @media only screen and (orientation: landscape) {
   body {
     background-color: lightblue;
   }
 }
+*/
 
 body, a, a:hover {  
       cursor:url(item/cursor.gif), auto; 
@@ -32,9 +34,16 @@ body, a, a:hover {
     left: 50%;
         -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-      border-radius: 30px 50px 30px 50px;
+      border-radius: 10px 50px 10px 50px;
       background-color: white;
       padding: 50px;
+}
+
+#divNormal{
+      border-radius: 10px 50px 10px 50px;
+      background-color: white;
+      padding: 50px;
+      width: 50%;
 }
 
 video {
