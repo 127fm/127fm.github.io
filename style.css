@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); 
 
+/* 
 body, a, a:hover {  
   cursor:url(item/cursor.gif), auto; 
-}
+} 
+
+  -webkit-transform: translate(-40%, -65%);
+  transform: translate(-40%, -65%);
+*/
 
 body {
   color:#212121; 
@@ -11,19 +16,35 @@ body {
   background-attachment:fixed;
   background-size: cover;
   background-repeat:repeat;
-  background-position:center;
+  background-position: right 35% bottom 40%;
   padding:50px; 
   font-family: 'Quicksand', sans-serif; 
-  font-size:2vw;
 }
 
-#divElement {
+@media (orientation: portrait) {
+  body {
+  font-size:2.7vw;
+  }
+ #box { 
+  top: 10%;
+  left: 40%;}
+}
+
+@media (orientation: landscape) {
+  body {
+  font-size:1.7vw;
+  }
+ #box { 
+  top: 30%;
+  left: 55%;}
+}
+
+
+#box {
+  width: 30%;
+    float: right;
   margin: auto;
   position: fixed;
-  top: 50%;
-  left: 65%;
-  -webkit-transform: translate(-40%, -65%);
-  transform: translate(-40%, -65%);
   border-radius: 5px 70px 5px 70px;
 }
 
@@ -31,10 +52,11 @@ body {
   width: 50%;
 }
 
-#divNormal, #divElement {
+#divNormal, #box {
   border-radius: 5px 70px 5px 70px;
   padding: 50px;
   background-color: white;
+
   box-shadow:
   1px 1px 0.5px -19px rgba(0, 0, 0, 0.003),
   2.6px 2.9px 1.5px -19px rgba(0, 0, 0, 0.005),
@@ -60,9 +82,6 @@ body {
     text-decoration: underline;
   }
 
-  p {
-   font-size: 1rem;
- }
 
  h2 {
    font-size: 3vw;/* 2 times the body text */
@@ -70,3 +89,23 @@ body {
       margin-bottom:15px;
  }
 
+
+
+
+  #snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+  }
+
+  .snowflake {
+    position: fixed;
+    background-color: #FFF;
+    user-select: none;
+    z-index: 1000;
+    pointer-events: none;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
