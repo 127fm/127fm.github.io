@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap'); 
+@import url('https://fonts.googleapis.com/css?family=Volkhov&display=swap'); 
 
 /* 
 body, a, a:hover {  
@@ -7,6 +8,16 @@ body, a, a:hover {
 
   -webkit-transform: translate(-40%, -65%);
   transform: translate(-40%, -65%);
+
+    video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
 */
 
 body {
@@ -63,15 +74,6 @@ body {
   6.3px 6.9px 3.6px -19px rgba(0, 0, 0, 0.007),
   21px 23px 12px -19px rgba(0, 0, 0, 0.01);
 }
-
-  video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-  }
 
   a:link, a:visited, a:hover, a:active {
     color: black;
