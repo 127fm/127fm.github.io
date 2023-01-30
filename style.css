@@ -18,16 +18,28 @@ body, a, a:hover {
     left: 0;
   }
 
+
+
+body {
+  color:#212121; 
+  background-color:#D0FFD3; 
+  background-image:url('item/backdrop.jpg');
+  background-attachment:fixed;
+  background-size: cover;
+  background-repeat:repeat;
+  background-position: right 50% bottom 40%;
+  padding:50px; 
+  font-family: 'Quicksand', sans-serif; 
+}
+
 */
 
 body {
   color:#212121; 
   background-color:#D0FFD3; 
-  background-image:url('item/backdrop2.jpg');
+  background-image:url('item/backdrop.png');
   background-attachment:fixed;
   background-size: cover;
-  background-repeat:repeat;
-  background-position: right 50% bottom 40%;
   padding:50px; 
   font-family: 'Quicksand', sans-serif; 
 }
